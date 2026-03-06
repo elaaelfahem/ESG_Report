@@ -1,0 +1,15 @@
+{
+    "name": "esg-report-app",
+    "version": "1.0.0",
+    "description": "ESG Multi-Agent Reporting Suite",
+    "scripts": {
+        "dev:frontend": "cd frontend && npm run dev",
+        "dev:backend": "venv\\Scripts\\python -m uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000",
+        "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+        "start": "npm run dev",
+        "install:all": "npm install && cd frontend && npm install && cd .. && venv\\Scripts\\pip install -r backend\\requirements.txt"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}

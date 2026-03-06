@@ -1,0 +1,43 @@
+# Environments
+venv/
+.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py[cod]
+*$py.class
+
+# Node
+node_modules/
+
+# Dependencies
+package-lock.json
+
+# Logs and databases
+logs/
+esg_db/
+vectorstore/
+*.log
+
+# Project generated outputs
+reports/
+output_md/
+chunks.json
+extracted_documents.json
+extracted_documents_pages.json
+Final_ESG_Report.md
+
+# Data and files
+data/
+*.pdf
+*.txt
+!requirements.txt
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
